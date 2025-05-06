@@ -14,4 +14,12 @@ app.use(express.urlencoded({extended: true, limit: "10kb"}))
 app.use(express.static("public"))
 app.use(cookieParser( ))
 
+//routes
+app.get("/", (req, res) => {
+    console.log("Getted");
+})
+
+// app.use("/api/v1/users", userRouter)
+
+
 export {app}
